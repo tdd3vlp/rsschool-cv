@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Quicksand:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+}
+
+/* Links reset */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+/* Containers */
+
+.wrapper {
+  margin: auto;
+  width: 800px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.general--container {
+  display: flex;
+}
+
+.container--1 {
+  flex: 0 0 40%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.container--2 {
+  flex: 0 0 60%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* Containers' headers */
+
+.container--1--header {
+  padding-left: 30px;
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  color: black;
+  border-radius: 10px;
+}
+
+.container--2--header {
+  padding-left: 30px;
+  background-color: rgb(0, 0, 0);
+  background-clip: padding-box;
+  color: rgb(255, 255, 255);
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* Elements */
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  padding: 10px;
+}
+
+.nav--ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li + li:before {
+  content: ' | ';
+  padding: 0 10px;
+  opacity: 30%;
+}
+
+/* Picture and contacts */
+
+.user--logo {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.contacts--ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education--ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Experience */
+
+.experience--ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company {
+  padding: 3px;
+  background-color: rgb(90, 90, 90);
+  border-radius: 10px;
+}
+
+.position {
+  font-style: italic;
+}
+
+/* Education */
+
+.university {
+  padding: 3px;
+  background-color: rgb(90, 90, 90);
+  border-radius: 10px;
+}
+
+/* Languages */
+
+.language--name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.level--rus {
+  padding: 5px;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.level--eng {
+  padding: 5px;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.level--ger {
+  padding: 5px;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* Initials */
+
+.initials--title {
+  margin-left: 30px;
+}
+
+.job--position {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+/* About me */
+
+.hobbies--title {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hobbies--ul {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+/* Text */
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Projects */
+
+.calculator {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  width: 30%;
+}
+
+/* Footer */
+
+.footer {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.course--logo {
+  width: 75px;
+  height: 30px;
+}
+
+.github--logo {
+  width: 25px;
+  height: 25px;
+}
