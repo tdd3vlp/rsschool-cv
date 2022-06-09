@@ -56,10 +56,6 @@ a:visited {
   flex-direction: column;
 }
 
-a.contacts--github--link {
-  color: white;
-}
-
 /* Containers' headers */
 
 .container--1--header {
@@ -116,16 +112,21 @@ a.contacts--github--link {
 
 .contacts--method {
   font-size: 18px;
+  padding-left: 30px;
+  color: white;
+}
+
+.contacts--details {
   padding: 5px 5px 5px 30px;
   background-color: white;
   color: black;
   border-radius: 10px;
 }
 
-.contacts--details {
-  padding-left: 30px;
-  color: white;
+a.contacts--github--link {
+  display: block;
 }
+
 /* Education */
 
 .education--ul {
