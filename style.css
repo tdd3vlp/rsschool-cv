@@ -39,9 +39,14 @@ a:visited {
 
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(0, 0, 0, 1) 35%
+  );
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .container--2 {
@@ -49,12 +54,16 @@ a:visited {
 
   display: flex;
   flex-direction: column;
-  background-color: white;
+}
+
+a.contacts--github--link {
+  color: white;
 }
 
 /* Containers' headers */
 
 .container--1--header {
+  margin: 25px 0px 20px 0px;
   padding-left: 30px;
   background-color: rgb(255, 201, 5);
   background-clip: padding-box;
@@ -97,28 +106,39 @@ a:visited {
 }
 
 .contacts--ul {
+  font-size: 16px;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-right: 20px;
 }
 
 .contacts--method {
-  padding: 5px;
+  font-size: 18px;
+  padding: 5px 5px 5px 30px;
   background-color: white;
   color: black;
   border-radius: 10px;
 }
 
+.contacts--details {
+  padding-left: 30px;
+  color: white;
+}
 /* Education */
 
 .education--ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 20px;
 }
 
 .university {
-  padding: 5px;
+  padding: 5px 30px 5px 30px;
   background-color: white;
   color: black;
   border-radius: 10px;
@@ -126,6 +146,12 @@ a:visited {
 
 .faculty {
   font-style: italic;
+  padding: 5px 30px 5px 30px;
+}
+
+.education--years {
+  font-size: 18px;
+  padding-left: 30px;
 }
 
 /* Experience */
@@ -134,44 +160,60 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+
+.experience--years {
+  font-size: 18px;
+  padding-left: 30px;
 }
 
 .company {
-  padding: 5px;
+  font-size: 16px;
+  padding: 5px 30px 5px 30px;
   background-color: white;
   color: black;
   border-radius: 10px;
 }
 
 .position {
+  font-size: 16px;
+  padding-left: 30px;
   font-style: italic;
 }
 
 /* Languages */
 
 .language--name {
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: bold;
+  padding-left: 30px;
 }
+
 .level--rus {
-  padding: 5px;
-  width: 80%;
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 85%;
   background-color: white;
   color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
 .level--eng {
-  padding: 5px;
-  width: 60%;
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 70%;
   background-color: white;
   color: rgb(0, 0, 0);
   border-radius: 5px;
 }
 
 .level--ger {
-  padding: 5px;
-  width: 40%;
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 55%;
   background-color: white;
   color: rgb(0, 0, 0);
   border-radius: 5px;
@@ -217,7 +259,7 @@ a:visited {
 .calculator {
   display: block;
   margin: auto;
-  padding: 5px;
+  padding: 30px 0px 30px 0px;
   width: 30%;
 }
 
