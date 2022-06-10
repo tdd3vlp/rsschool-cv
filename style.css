@@ -264,6 +264,44 @@ a.contacts--github--link {
   width: 30%;
 }
 
+/* Skills */
+
+.skills--ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0px 30px 0px;
+}
+
+.skills--ul--lang {
+  padding-left: 30px;
+  background-color: rgb(155, 155, 155);
+  width: 80%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills--ul--html {
+  padding-left: 30px;
+  width: 60%;
+  background-color: rgb(185, 185, 185);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills--ul--css {
+  padding-left: 30px;
+  width: 70%;
+  background-color: rgb(170, 170, 170);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills--ul--js {
+  padding-left: 30px;
+  width: 40%;
+
+  background-color: rgb(215, 215, 215);
+  border-radius: 0px 10px 10px 0px;
+}
+
 /* Footer */
 
 .footer {
