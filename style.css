@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Quicksand:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+}
+
+/* Links reset */
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+/* Containers */
+
+.wrapper {
+  margin: auto;
+  width: 800px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.general-container {
+  display: flex;
+}
+
+.container-1 {
+  flex: 0 0 40%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(0, 0, 0, 1) 35%
+  );
+  color: white;
+  border-radius: 5px;
+}
+
+.container-2 {
+  flex: 0 0 60%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Containers' headers */
+
+.container-1-header {
+  margin: 25px 0px 20px 0px;
+  padding-left: 30px;
+  background-color: rgb(255, 201, 5);
+  background-clip: padding-box;
+  color: black;
+  border-radius: 10px;
+}
+
+.container-2-header {
+  padding-left: 30px;
+  background-color: rgb(0, 0, 0);
+  background-clip: padding-box;
+  color: rgb(255, 255, 255);
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* Elements */
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  padding: 10px;
+}
+
+.nav-ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Picture and contacts */
+
+.user-logo {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+
+.contacts-ul {
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 20px;
+}
+
+.contacts-method {
+  font-size: 18px;
+  padding-left: 30px;
+  color: white;
+}
+
+.contacts-details {
+  padding: 5px 5px 5px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+a.contacts-github-link {
+  display: block;
+}
+
+/* Education */
+
+.education-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+
+.university {
+  padding: 5px 30px 5px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.faculty {
+  font-style: italic;
+  padding: 5px 30px 5px 30px;
+}
+
+.education-years {
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+/* Experience */
+
+.experience-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+
+.experience-years {
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.company {
+  font-size: 16px;
+  padding: 5px 30px 5px 30px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.position {
+  font-size: 16px;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+/* Languages */
+
+.language-name {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.level-rus {
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 85%;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.level-eng {
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 70%;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.level-ger {
+  font-size: 16px;
+  padding: 5px 0px 5px 30px;
+  width: 55%;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/* Initials */
+
+.initials-title {
+  margin-left: 30px;
+}
+
+.job-position {
+  margin-left: 30px;
+  padding-bottom: 30px;
+}
+
+/* About me */
+
+.hobbies-title {
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hobbies-ul {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+/* Text */
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Projects */
+
+.calculator {
+  display: block;
+  margin: auto;
+  padding: 30px 0px 30px 0px;
+  width: 30%;
+}
+
+/* Skills */
+
+.skills-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 0px 30px 0px;
+}
+
+.skills-ul-lang {
+  padding-left: 30px;
+  background-color: rgb(145, 145, 145);
+  width: 80%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills-ul-phshp {
+  padding-left: 30px;
+  background-color: rgb(165, 165, 165);
+  width: 65%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills-ul-html {
+  padding-left: 30px;
+  width: 50%;
+  background-color: rgb(185, 185, 185);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills-ul-css {
+  padding-left: 30px;
+  width: 50%;
+  background-color: rgb(185, 185, 185);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.skills-ul-js {
+  padding-left: 30px;
+  width: 35%;
+
+  background-color: rgb(205, 205, 205);
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* Footer */
+
+.footer {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.course-logo {
+  width: 75px;
+  height: 30px;
+}
+
+.github-logo {
+  width: 25px;
+  height: 25px;
+}
