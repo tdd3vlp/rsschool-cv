@@ -1,11 +1,11 @@
 'use strict';
 
-const navigation = document.querySelector('.nav--ul');
+const navigation = document.querySelector('.nav-ul');
 const education = document.querySelector('.education');
 const experience = document.querySelector('.experience');
 const projects = document.querySelector('.projects');
 const skills = document.querySelector('.skills');
-const code = document.querySelector('.code--example');
+const code = document.querySelector('.code-example');
 const languages = document.querySelector('.languages');
 
 navigation.addEventListener('click', function (e) {
