@@ -1,196 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <nav class="nav">
-          <ul class="nav-ul">
-            <li>
-              <a href="">Education</a>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#education">Education</a>
             </li>
-            <li>
-              <a href="">Experience</a>
+            <li class="nav__list-item">
+              <a href="#experience">Experience</a>
             </li>
-            <li>
-              <a href="">Projects</a>
+            <li class="nav__list-item">
+              <a href="#projects">Projects</a>
             </li>
-            <li>
-              <a href="">Skills</a>
+            <li class="nav__list-item">
+              <a href="#skills">Skills</a>
             </li>
-            <li>
-              <a href="">Code Example</a>
+            <li class="nav__list-item">
+              <a href="#code">Code Example</a>
             </li>
-            <li>
-              <a href="">Languages</a>
+            <li class="nav__list-item">
+              <a href="#languages">Languages</a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="general-container">
-        <div class="container-1">
-          <div class="user-intro">
-            <img src="ava2.jpg" alt="User profile picture" class="user-logo">
+      <main class="container">
+        <aside class="aside">
+          <div class="user">
+            <img
+              src="./assets/images/me.jpg"
+              alt="User profile picture"
+              class="user__logo"
+            />
           </div>
 
-          <div class="contacts">
-            <h2 class="contacts-title container-1-header">Contacts</h2>
-            <ul class="contacts-ul">
-              <li class="Phone">
-                <p class="contacts-method">Phone</p>
-                <p class="contacts-details">+7 (915) 850-00-44</p>
-              </li>
-              <li class="Email">
-                <p class="contacts-method">Email</p>
-                <p class="contacts-details">tdd3vlp@gmail.com</p>
-              </li>
-              <li class="Github">
-                <p class="contacts-method">Github</p>
+          <div class="aside__contacts">
+            <h2 class="aside-title">Contacts</h2>
+            <div class="contacts__block">
+              <div class="contact">
+                <p class="contact-name">Phone</p>
+                <a href="tel:+79158500044" class="contact-data"
+                  >+7 (915) 850-00-44</a
+                >
+              </div>
+              <div class="contact">
+                <p class="contact-name">E-mail</p>
+                <a href="mailto:tdd3vlp@gmail.com" class="contact-data"
+                  >tdd3vlp@gmail.com</a
+                >
+              </div>
+              <div class="contact">
+                <p class="contact-name">Github</p>
                 <a
+                  class="contact-data"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/tdd3vlp"
-                  class="contacts-details contacts-github-link"
                   >tdd3vlp</a
                 >
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="education">
-            <h2 class="education-title container-1-header">Education</h2>
-            <ul class="education-ul">
-              <li>
-                <p class="education-years">2009 - 2014</p>
-                <p class="university">
+          <div class="aside__block" id="education">
+            <h2 class="aside-title">Education</h2>
+            <ul class="block__list">
+              <li class="block__years">2022 - present</li>
+              <li class="block__list-item">
+                <p class="block__list-name">The Rolling Scopes School</p>
+                <p class="block__list-text">Web Development</p>
+              </li>
+              <li class="block__years">2009 - 2014</li>
+              <li class="block__list-item">
+                <p class="block__list-name">
                   Linguistics University Of Nizhny Novgorod
                 </p>
-                <p class="faculty">Translation and Translation Studies</p>
+                <p class="block__list-text">
+                  Translation and Translation Studies
+                </p>
               </li>
-              <li>
-                <p class="education-years">2006 - 2008</p>
-                <p class="university">
+              <li class="block__years">2006 - 2008</li>
+              <li class="block__list-item">
+                <p class="block__list-name">
                   Russian State University For The Humanities
                 </p>
-                <p class="faculty">State and municipal management</p>
+                <p class="block__list-text">State and municipal management</p>
               </li>
             </ul>
           </div>
-          <div class="experience">
-            <h2 class="experience-title container-1-header">Experience</h2>
-            <ul class="experience-ul">
-              <li>
-                <p class="experience-years">2012 - present</p>
-                <p class="position">Translator</p>
-                <p class="company">LLC Nobrand - Translation Bureau, Moscow</p>
+          <div class="aside__block" id="experience">
+            <h2 class="aside-title">Experience</h2>
+            <ul class="block__list">
+              <li class="block__years">2012 - present</li>
+              <li class="block__list-item">
+                <p class="block__list-name">Translator</p>
+                <p class="block__list-text">
+                  LLC Nobrand - Translation Bureau, Moscow
+                </p>
               </li>
-              <li>
-                <p class="experience-years">2014 - 2016</p>
-                <p class="position">Account-Manager</p>
-                <p class="company">
+              <li class="block__years">2014 - 2016</li>
+              <li class="block__list-item">
+                <p class="block__list-name">Account-Manager</p>
+                <p class="block__list-text">
                   LLC Effectiff - Translation Bureau, Moscow
                 </p>
               </li>
             </ul>
           </div>
-          <div class="languages">
-            <h2 class="languages-title container-1-header">Languages</h2>
-            <ul class="languages-ul">
-              <li>
-                <p class="language-name">Russian</p>
-                <div class="level-rus">Native</div>
+
+          <div class="aside__block" id="languages">
+            <h2 class="aside-title">Languages</h2>
+            <ul class="block__list">
+              <li class="block__list-item block__list-progress-1">
+                <p class="block__list-name">Russian</p>
+                <div class="block__list-text">Native</div>
               </li>
-              <li>
-                <p class="language-name">English</p>
-                <div class="level-eng">Advanced</div>
+              <li class="block__list-item block__list-progress-2">
+                <p class="block__list-name">English</p>
+                <div class="block__list-text">Advanced</div>
               </li>
-              <li>
-                <p class="language-name">German</p>
-                <div class="level-ger">Intermediate</div>
+              <li class="block__list-item block__list-progress-3">
+                <p class="block__list-name">German</p>
+                <div class="block__list-text">Intermediate</div>
               </li>
             </ul>
           </div>
-        </div>
-        <div class="container-2">
-          <div class="initials">
-            <h1 class="initials-title">Anton Todorov</h1>
-            <h2 class="job-position">Junior Developer</h2>
+        </aside>
+        <div class="info">
+          <div class="user__info">
+            <h1 class="user-name">Anton Todorov</h1>
+            <h2 class="user-position">Web Developer</h2>
           </div>
-          <div class="about-me">
-            <h2 class="about-me-title container-2-header">About Me</h2>
-            <p class="about-me-text text">
-              Success comes when you're in love with what you do. Once I fell
-              for languages and found some meanings in photography. Those things
-              gave me possibilities to be creative and to create. Recently I
-              have had half an eye on web-development and this made me more than
-              curious. I'm gonna get some goals achieved.
+          <div class="info__block">
+            <h2 class="info__heading">About Me</h2>
+            <p class="info__text">
+              Passionate translator with a strong foundation in linguistics and
+              a keen eye for detail. Currently making a deliberate shift toward
+              becoming a proficient web developer. Eager to leverage my
+              analytical mindset and language skills in the world of coding.
+              Committed to continuous learning and improvement, I am dedicated
+              to mastering the art of web development. Enthusiastic about
+              creating seamless user experiences and innovative solutions.
+              Excited to embark on this journey, explore new technologies, and
+              contribute meaningfully to the ever-evolving web development
+              landscape.
             </p>
-            <p class="hobbies-title">Hobbies</p>
-            <ul class="hobbies-ul">
-              <li>Music</li>
-              <li>Photography</li>
-              <li>Books</li>
+          </div>
+          <div class="info__block">
+            <p class="info__heading">Hobbies</p>
+            <ul class="info__list">
+              <li class="info__list-item">Music</li>
+              <li class="info__list-item">Photography</li>
+              <li class="info__list-item">Books</li>
+              <li class="info__list-item">Movies & TV series</li>
             </ul>
           </div>
 
-          <div class="projects">
-            <h2 class="projects-title container-2-header">Projects</h2>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://tdd3vlp.github.io/calcul4tor/"
-            >
-              <img
-                src="calculator.png"
-                alt="Project 'Calculator'"
-                class="calculator"
+          <div class="info__block" id="projects">
+            <h2 class="info__heading">Projects</h2>
+            <div class="projects">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tdd3vlp.github.io/calcul4tor/"
               >
-            </a>
+                <img src="calc.jpg" alt="" class="calculator" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tdd3vlp.github.io/ominfoodProject/"
+              >
+                <img src="omnifood-logo.png" alt="" class="omnifood" />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://tdd3vlp.github.io/natours/"
+              >
+                <img src="logo-white.png" alt="" class="natours" />
+              </a>
+            </div>
           </div>
-          <div class="skills">
-            <h2 class="skills-title container-2-header">Skills</h2>
-            <ul class="skills-ul">
-              <li class="skills-ul-lang">High-level English</li>
-              <li class="skills-ul-phshp">Photoshop</li>
-              <li class="skills-ul-html">HTML</li>
-              <li class="skills-ul-css">CSS</li>
-              <li class="skills-ul-js">JavaScript</li>
+          <div class="info__block" id="skills">
+            <h2 class="info__heading">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__list-item skill-1">Advanced language</li>
+              <li class="skills__list-item skill-2">HTML</li>
+              <li class="skills__list-item skill-3">CSS</li>
+              <li class="skills__list-item skill-4">SASS</li>
+              <li class="skills__list-item skill-5">JavaScript</li>
+              <li class="skills__list-item skill-6">Git</li>
+              <li class="skills__list-item skill-7">Photoshop</li>
             </ul>
           </div>
-          <div class="code-example">
-            <h2 class="code-example-title container-2-header">Code Example</h2>
-            <pre class="text">
-              document.addEventListener('keydown', function (e) {
-                if (isFinite(e.key)) {
-                  inputNumber(e.key);
-                } else if (
-                  e.key === '*' ||
-                  e.key === '/' ||
-                  e.key === '+' ||
-                  e.key === '-' ||
-                  e.key === '='
-                ) {
-                  inputOperation(e.key);
-                } else if (e.key === '.') {
-                  decimal();
-                } else if (e.key === 'Backspace') {
-                  clear('clear-all');
-                } else if (e.key === 'Enter') {
-                  e.key === '=';
-                  inputOperation('=');
-                }
-              });
+          <div class="info__block" id="code">
+            <h2 class="info__heading">Code Example</h2>
+            <pre class="code-example">
+              function reverseWords(str) {
+                let arr = str.split(' ');
+                let newArr = arr.map((e) => e.split('').reverse().join(''));
+              
+                return newArr.join(' ');
+              }
             </pre>
           </div>
         </div>
       </main>
       <footer class="footer">
-        <p>June 2022</p>
+        <p class="footer-date">November 2023</p>
 
         <a
           target="_blank"
@@ -198,20 +224,22 @@
           href="https://github.com/tdd3vlp"
           class="github-link"
           ><img
-            src="github-logo.png"
+            src="./assets/images/github.png"
             alt="Rs School Logo"
             class="github-logo"
-          >
-          Github</a
-        >
+          />
+        </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://rs.school/js/"
           class="link"
-          ><img src="rs_school_js.png" alt="Rs School Logo" class="course-logo"></a>
+          ><img
+            src="./assets/images/rs.png"
+            alt="Rs School Logo"
+            class="course-logo"
+        /></a>
       </footer>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
