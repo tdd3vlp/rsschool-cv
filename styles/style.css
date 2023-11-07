@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&family=Quicksand:wght@300;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 120rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  border-radius: 5rem;
+  background: url(../assets/images/bg.jpg) center/cover;
+}
+
+.container {
+  margin: 5rem auto;
+  width: 100rem;
+
+  display: flex;
+  gap: 10px;
+}
+
+.aside {
+  flex: 0 0 40%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+
+  border-radius: 2.5rem;
+}
+
+.info {
+  flex: 0 0 60%;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 2.5rem;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.info__heading {
+  padding: 0.5rem 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #fff;
+
+  border-radius: 0 5rem;
+  background-color: rgb(84 114 89);
+}
+
+/* Elements */
+
+.header {
+  width: 100%;
+
+  border-radius: 5rem 0;
+  background-color: black;
+}
+
+.nav {
+  padding: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 2rem;
+}
+
+.nav__list-item a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__list-item a:hover {
+  color: rgb(84 114 89);
+}
+
+/* Picture and contacts */
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user__logo {
+  width: 25rem;
+
+  border-radius: 100%;
+  border: 2.5px solid rgb(84 114 89);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.aside__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aside-title {
+  margin-bottom: 2.5rem;
+
+  font-size: 2.5rem;
+  color: rgb(84 114 89);
+}
+
+.contacts__block {
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  color: #fff;
+}
+
+.contact {
+  padding: 0.25rem 3.5rem;
+  border-radius: 0rem 5rem;
+  background-color: rgb(84 114 89);
+}
+
+.contact-data {
+  color: black;
+}
+
+a.contacts-github-link {
+  display: block;
+}
+
+/* Education */
+
+.block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.block__list-item {
+  padding: 0.5rem 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+
+  border-radius: 0rem 5rem;
+  background-color: rgb(84 114 89);
+}
+
+.block__list-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  color: #fff;
+}
+
+.block__list-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.block__years {
+  padding-left: 1rem;
+
+  font-size: 1.8rem;
+  color: rgb(84 114 89);
+}
+
+.block__list-progress-1 {
+  width: 100%;
+  background-color: rgb(102, 118, 104);
+}
+
+.block__list-progress-2 {
+  width: 75%;
+  background-color: rgb(102, 118, 104);
+}
+
+.block__list-progress-3 {
+  width: 50%;
+  background-color: rgb(102, 118, 104);
+}
+
+/* Initials */
+
+.user__info {
+  margin: 7rem 2rem;
+  padding: 2.5rem 0 2.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  border-radius: 2.5rem;
+  background-color: rgb(84 114 89);
+}
+
+.user-name {
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+
+.user-position {
+  font-weight: 500;
+
+  color: #fff;
+}
+
+.info__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__text {
+  padding: 2rem 2.5rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+/* About me */
+
+.info__list {
+  padding: 2rem 2.5rem;
+
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.calculator {
+  padding: 2rem 2.5rem;
+
+  width: 15rem;
+}
+
+.omnifood {
+  width: 15rem;
+}
+
+.natours {
+  width: 10rem;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Skills */
+
+.skills__list {
+  padding: 2rem 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skills__list-item {
+  padding: 0.5rem 2.5rem;
+
+  font-size: 1.6rem;
+
+  color: #fff;
+  border-radius: 0rem 5rem;
+}
+
+.skill-1 {
+  width: 90%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-2 {
+  width: 75%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-3 {
+  width: 60%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-4 {
+  width: 45%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-5 {
+  width: 30%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-6 {
+  width: 30%;
+  background-color: rgb(102, 118, 104);
+}
+
+.skill-7 {
+  width: 30%;
+  background-color: rgb(102, 118, 104);
+}
+
+.code-example {
+  padding: 2.5rem 1rem;
+
+  font-size: 1.6rem;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+
+  padding: 2.5rem 2.5rem;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-date {
+  font-size: 1.8rem;
+
+  border-radius: 0.5rem;
+  border: 0.15rem solid rgb(102, 118, 104);
+}
+
+.course-logo {
+  width: 10rem;
+
+  border-radius: 0.5rem;
+  border: 0.15rem solid rgb(102, 118, 104);
+}
+
+.github-logo {
+  width: 5rem;
+  border-radius: 0.5rem;
+
+  border: 0.15rem solid rgb(102, 118, 104);
+}
