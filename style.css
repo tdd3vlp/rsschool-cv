@@ -37,6 +37,20 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: var(--space-4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    a {
+        transition: none;
+    }
+}
+
 body,
 h1,
 h2,
