@@ -33,6 +33,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 h1,
 h2,
@@ -226,5 +230,80 @@ aside li {
 }
 
 address {
-    font-size: normal;
+    font-style: normal;
+}
+
+/* Content */
+
+main section {
+    display: grid;
+    gap: var(--space-3);
+}
+
+main p {
+    max-width: var(--content-max);
+}
+
+pre {
+    margin: 0;
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow-x: auto;
+}
+
+code {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: var(--text-sm);
+}
+
+article {
+    display: grid;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+article ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+article li {
+    padding: var(--space-1) var(--space-2);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+}
+
+#education {
+    gap: var(--space-1);
+}
+
+#education h3 {
+    margin-top: var(--space-3);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
 }
