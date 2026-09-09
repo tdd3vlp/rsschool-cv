@@ -4,7 +4,7 @@
     --color-bg: oklch(99% 0.005 var(--hue));
     --color-surface: oklch(97% 0.008 var(--hue));
     --color-border: oklch(90% 0.012 var(--hue));
-    --color-muted: oklch(50% 0.002 var(--hue));
+    --color-muted: oklch(50% 0.02 var(--hue));
     --color-text: oklch(25% 0.02 var(--hue));
     --color-accent: oklch(55% 0.17 var(--hue));
 
@@ -99,7 +99,7 @@ p {
 
 a {
     text-decoration-color: var(--color-border);
-    text-underline-offset: 0.02em;
+    text-underline-offset: 0.2em;
     transition: color 0.15s ease;
 }
 
@@ -159,7 +159,7 @@ aside {
             "header header"
             "aside  main"
             "footer footer";
-        grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+        grid-template-columns: var(--side-width) minmax(0, 1fr);
         column-gap: var(--space-7);
     }
 
@@ -168,4 +168,63 @@ aside {
         top: var(--space-5);
         align-self: start;
     }
+}
+
+/* Header */
+
+header {
+    display: grid;
+    gap: var(--space-3);
+    padding-bottom: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+header p {
+    font-size: var(--text-lg);
+    color: var(--color-muted);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+}
+
+nav a {
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+/* Sidebar */
+
+aside img {
+    width: 100%;
+    max-width: 12rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+aside section {
+    display: grid;
+    gap: var(--space-2);
+}
+
+aside h3 {
+    margin-top: var(--space-3);
+    font-size: var(--text-sm);
+    font-weight: 600;
+}
+
+aside li {
+    font-size: var(--text-sm);
+}
+
+address {
+    font-size: normal;
 }
