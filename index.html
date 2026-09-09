@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Anton Todorov — Frontend Developer">
+        <link rel="stylesheet" href="style.css">
+        <title>Anton Todorov — Frontend Developer</title>
+    </head>
+    <body>
+        <header>
+            <h1>Anton Todorov</h1>
+            <p>Frontend Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#code-example">Code Example</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+        </header>
+            <aside>
+                <img src="assets/ava.jpg" alt="Anton Todorov, a portrait photo">
+                <section id="contacts">
+                    <h2>Contacts</h2>
+                    <address>
+                        <ul>
+                            <li>GitHub: <a href="https://github.com/tdd3vlp">tdd3vlp</a></li>
+                            <li>Telegram: <a href="https://t.me/tdd3vlp">@tdd3vlp</a></li>
+                            <li>Email: <a href="mailto:tdd3vlp@gmail.com">tdd3vlp@gmail.com</a></li>
+                            <li>Discord: <a href="https://discord.com/users/tdd3vlp">tdd3vlp</a></li>
+                        </ul>
+                    </address>
+                </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                    </ul>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                    </ul>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
+                </section>
+            </aside>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a frontend developer and a graduate of Hexlet. Now I
+                    build production web applications with Next.js, React and
+                    TypeScript. My current project is an e-commerce store
+                    running on its own server: PostgreSQL, payment provider
+                    integrations with signed webhooks, a two-language storefront
+                    and an admin panel. I work with AI daily and treat it as a
+                    useful tool. In parallel, I'm taking the RS School course
+                    and writing code by hand &mdash; shipping fast is one skill, but
+                    knowing exactly why the code works is another.
+                </p>
+            </section>
+            <section id="code-example">
+                <h2>Code Example</h2>
+                <p>
+                    <a
+                        href="https://www.codewars.com/kata/585d7d5adb20cf33cb000235"
+                        >Find the Unique Number</a
+                    >
+                </p>
+                <p>6 kyu</p>
+                <pre><code>function findUniq(arr) {
+    const counts = new Map();
+
+    for (const num of arr) {
+        counts.set(num, (counts.get(num) ?? 0) + 1);
+    }
+
+    for (const [num, count] of counts) {
+        if (count === 1) return num;
+    }
+}</code></pre>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <article>
+                    <h3>Brain Games</h3>
+                    <p>
+                        A command-line application featuring a set of five
+                        educational mini-games.
+                    </p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>Commander.js</li>
+                    </ul>
+                    <a href="https://github.com/tdd3vlp/frontend-project-44"
+                        >View on GitHub</a
+                    >
+                </article>
+                <article>
+                    <h3>Slack-Inspired Chat</h3>
+                    <p>
+                        A functional real-time messaging application built with
+                        React, Redux Toolkit, and Socket.IO, providing essential
+                        features for collaboration and information exchange.
+                    </p>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Redux Toolkit</li>
+                        <li>Socket.IO</li>
+                    </ul>
+                    <a href="https://github.com/tdd3vlp/frontend-project-12"
+                        >View on GitHub</a
+                    >
+                </article>
+                <article>
+                    <h3>KonsoliX Store</h3>
+                    <p>
+                        An online store selling PlayStation games and
+                        subscriptions: catalogue with editions and per-platform
+                        pricing, cart with server-side price calculation, two
+                        payment providers with signed webhooks, cashback and
+                        promo codes, a bilingual storefront, and an admin panel
+                        for the catalogue, prices and orders.
+                    </p>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>Next.js (App Router)</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <a href="https://konsolix.ru">View Live</a>
+                </article>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <h3>Formal Education</h3>
+                <p>Linguistics University of Nizhny Novgorod</p>
+                <p>Linguist, interpreter</p>
+                <p>September 2009 — July 2014</p>
+                <h3>Courses</h3>
+                <p>Hexlet</p>
+                <p>Frontend Development</p>
+                <p>January 2024 — November 2024</p>
+            </section>
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Russian (Native)</li>
+                    <li>English (Advanced)</li>
+                    <li>German (Intermediate)</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <img src="assets/rss-logo.svg" alt="A round logo of RS School">
+            <a href="https://rs.school/courses/short-track">RS School</a>
+            <a href="https://github.com/tdd3vlp">GitHub</a>
+            <time datetime="2026">2026</time>
+        </footer>
+    </body>
+</html>
